@@ -1,5 +1,5 @@
 .description__wrapper {
-  margin: 0 20px;
+  .wrapper();
 }
 
 .description__list {
@@ -12,20 +12,21 @@
   min-height: 60px;
   padding-left: 80px;
   margin-top: 20px;
-}
+  .text();
 
-.description__item--healthy {
-  background-image: url("../../img/description-healthy.svg");
-}
+  &--healthy {
+    background-image: url("../img/description-healthy.svg");
+  }
 
-.description__item--easy {
-  background-image: url("../../img/description-easy.svg");
-}
+  &--easy {
+    background-image: url("../img/description-easy.svg");
+  }
 
-.description__item--start {
-  background-image: url("../../img/description-start.svg");
-}
+  &--start {
+    background-image: url("../img/description-start.svg");
+  }
 
-.description__item--enjoy {
-  background-image: url("../../img/description-enjoy.svg");
+  &--enjoy {
+    background-image: url("../img/description-enjoy.svg");
+  }
 }
