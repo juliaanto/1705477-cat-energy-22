@@ -6,7 +6,17 @@
   color: @white;
   cursor: pointer;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   padding: 11px;
   border: none;
+
+  &--catalog {
+    grid-row: ~"-1 / -2";
+    grid-column: ~"1 / -1";
+  }
+
+  &--secondary {
+    background-color: @light-grey;
+    color: @dark-grey;
+  }
 }
