@@ -10,9 +10,24 @@
   padding: 11px;
   border: none;
 
-  &--catalog {
-    grid-row: ~"-1 / -2";
-    grid-column: ~"1 / -1";
+  @media (min-width: @tablet-width) {
+    width: max-content;
+  }
+
+  &--intro {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .wrapper();
+
+    @media (min-width: @tablet-width) {
+      bottom: auto;
+      width: auto;
+      margin-left: 80px;
+      margin-top: 30px;
+      right: auto;
+    }
   }
 
   &--secondary {

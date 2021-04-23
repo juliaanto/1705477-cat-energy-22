@@ -1,19 +1,56 @@
 .intro {
   min-height: 302px;
-  background-image: linear-gradient(to bottom, rgba(@green, 0.85), rgba(@green, 0.85) 302px, @white 302px), url("../img/intro.jpg"), linear-gradient(to right, @special-grey-left, @special-grey-right);
+  background-image: linear-gradient(to bottom, rgba(@green, 0.85) 302px, @white 302px), url("../img/intro.jpg"), linear-gradient(to right, @special-grey-left, @special-grey-right);
   background-color: @green;
   background-repeat: no-repeat;
   background-position: top center;
   color: @white;
   padding-top: 23px;
+  position: relative;
+  padding-bottom: 153px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    background-color: inherit;
+    color: @black;
+    padding-bottom: 0;
+    padding-left: 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @white 50%, rgba(@green, 0.85) 50%), url("../img/intro.jpg"), linear-gradient(to right, @special-grey-left, @special-grey-right);
+    margin-top: -130px;
+    padding-top: 130px;
+    z-index: -1;
+    background-position: 100%, 100%;
+  }
 
   &::after {
     content: "";
     display: block;
+    position: absolute;
     background-image: url("../img/intro-product.png");
     background-repeat: no-repeat;
     background-position: bottom center;
     height: 270px;
+    width: 280px;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%);
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+      bottom: 0;
+      left: 50px;
+      transform: translate(0);
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      z-index: 1;
+      transform: translate(-50%);
+      left: 50%;
+    }
   }
 }
 
@@ -21,4 +58,8 @@
   text-transform: uppercase;
   text-align: center;
   margin: 29px auto;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }
