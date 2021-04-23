@@ -1,14 +1,15 @@
 .partnership {
-  display: flex;
-  gap: 10px;
   background-color: @light-grey;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
 
   &--index {
     background-color: @white;
   }
+}
+
+.partnership__wrapper {
+  .wrapper();
+  display: flex;
+  justify-content: space-between;
 }
 
 .partnership__title {
@@ -16,7 +17,6 @@
   text-transform: uppercase;
   font-size: 16px;
   color: @light-black;
-  width: min-content;
 }
 
 .partnership__address {
