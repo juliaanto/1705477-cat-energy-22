@@ -11,6 +11,13 @@
     max-width: max-content;
   }
 
+  &--catalog-other {
+    @media (min-width: @tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+
   &::before {
     display: block;
     content: "";
