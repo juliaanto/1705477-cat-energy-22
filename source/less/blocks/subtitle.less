@@ -1,23 +1,25 @@
 .subtitle {
   font-size: 24px;
-  display: grid;
-  grid-template-columns: 0 max-content auto;
-  gap: 20px;
-  align-items: center;
-  width: 100%;
   font-weight: 400;
+  background-color: @white;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 181px;
+  margin-left: -40px;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 30px max-content auto;
-    gap: 40px;
+    max-width: max-content;
   }
 
-  &::before,
-  &::after {
+  &::before {
     display: block;
     content: "";
-    width: 100%;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     height: 2px;
     background-color: @green;
+    margin-top: 17px;
+    z-index: -1;
   }
 }
