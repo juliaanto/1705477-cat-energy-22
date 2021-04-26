@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -18,17 +17,19 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <a class="main-nav__link main-nav__link--current" href="index.html">Главная</a>
-          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          <a class="main-nav__link" href="form.html">Подбор программы</a>
+          <a class="main-nav__link main-nav__link--intro main-nav__link--current" href="index.html">Главная</a>
+          <a class="main-nav__link main-nav__link--intro" href="catalog.html">Каталог продукции</a>
+          <a class="main-nav__link main-nav__link--intro" href="form.html">Подбор программы</a>
         </div>
       </nav>
     </header>
     <main class="main">
       <section class="intro">
-        <h1 class="title title--index">Функциональное питание для котов</h1>
-        <p class="intro__subtitle">Занялся собой? Займись котом!</p>
-        <a class="button button--intro" href="form.html">Подобрать программу</a>
+        <div class="intro__wrapper">
+          <h1 class="title title--index">Функциональное питание для котов</h1>
+          <p class="intro__subtitle">Занялся собой? Займись котом!</p>
+          <a class="button button--intro" href="form.html">Подобрать программу</a>
+        </div>
       </section>
       <section class="options">
         <div class="options__wrapper">
@@ -57,32 +58,38 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="title title--example">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <dl class="example__facts">
-            <dt class="example__value">5 кг</dt>
-            <dd class="example__term">Cнижение веса</dd>
-          </dl>
-          <dl class="example__facts">
-            <dt class="example__value">60 дней</dt>
-            <dd class="example__term">Затрачено времени</dd>
-          </dl>
-          <div class="example__cost">
-            <p class="example__cost-text">Затраты на питание:</p>
-            <p class="example__cost-value">15 000 руб.</p>
+          <div class="example__text">
+            <h2 class="title title--example">Живой пример</h2>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <dl class="example__facts">
+              <dt class="example__value">5 кг</dt>
+              <dd class="example__term">Cнижение веса</dd>
+            </dl>
+            <dl class="example__facts">
+              <dt class="example__value">60 дней</dt>
+              <dd class="example__term">Затрачено времени</dd>
+            </dl>
+            <div class="example__cost">
+              <p class="example__cost-text">Затраты на питание:</p>
+              <p class="example__cost-value">15 000 руб.</p>
+            </div>
           </div>
-          <div class="example__photo toggle">
-            <p class="toggle__toggle-min">Было</p>
-            <button class="toggle__button" aria-label="Просмотр фото до/после"></button>
-            <p class="toggle__toggle-max">Стало</p>
+          <div class="example__photo">
+            <div class=" toggle">
+              <p class="toggle__toggle-min">Было</p>
+              <button class="toggle__button" aria-label="Просмотр фото до/после"></button>
+              <p class="toggle__toggle-max">Стало</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <article class="partnership partnership--index">
-        <h3 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="partnership__address">ул. Большая Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
+        <div class="partnership__wrapper">
+          <h3 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <p class="partnership__address">ул. Большая Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
+        </div>
       </article>
       <div class="footer__map"></div>
       <div class="footer__links">

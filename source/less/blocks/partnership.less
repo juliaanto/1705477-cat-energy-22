@@ -1,11 +1,16 @@
 .partnership {
-  display: flex;
-  gap: 10px;
   background-color: @light-grey;
 
   &--index {
     background-color: @white;
   }
+}
+
+.partnership__wrapper {
+  .wrapper();
+  .wrapper(inner);
+  display: flex;
+  justify-content: space-between;
 }
 
 .partnership__title {

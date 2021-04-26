@@ -1,5 +1,10 @@
 .description__wrapper {
   .wrapper();
+  .wrapper(inner);
+
+  @media (min-width: @tablet-width) {
+    // padding-right: 109px;
+  }
 }
 
 .description__list {
@@ -7,7 +12,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -46,7 +51,6 @@
     padding-left: 0;
     padding-top: 100px;
     padding-right: 20px;
-    margin-right: 80px;
 
     &::after {
       font-size: 280px;
