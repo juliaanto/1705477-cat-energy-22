@@ -24,4 +24,17 @@
       width: 100%;
     }
   }
+
+  &--catalog {
+    .separator-section (20px);
+
+    @media (min-width: @tablet-width) {
+      &::after {
+        display: none;
+      }
+
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
 }

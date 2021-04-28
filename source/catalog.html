@@ -26,7 +26,7 @@
     <main class="main">
       <div class="catalog">
         <div class="catalog__wrapper">
-          <h1 class="title">Каталог продукции</h1>
+          <h1 class="title title--catalog">Каталог продукции</h1>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
               <img src="img/product-500-chicken.png" width="68" height="86" alt="Cat Energy PRO 500 г с курицей">
@@ -40,7 +40,7 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">700 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
@@ -55,7 +55,7 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">1000 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
@@ -70,7 +70,7 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">700 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
@@ -85,7 +85,7 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">1000 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
@@ -100,7 +100,7 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">400 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
@@ -115,7 +115,7 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">700 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product">
             <a class="catalog__image" href="#">
@@ -130,23 +130,21 @@
               <dt class="catalog__term">Цена</dt>
               <dd class="catalog__value">500 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--link" href="#">Заказать</a>
           </article>
           <article class="catalog__product catalog__product--more">
             <h3 class="catalog__title catalog__title--more">Показать еще 100500 товаров</h3>
             <p class="catalog__subtitle">На самом деле вкусов гораздо больше!</p>
             <a class="button button--secondary" href="#">Показать все</a>
           </article>
-        </div>
-        <h2 class="subtitle">Дополнительные товары</h2>
-        <div class="catalog__wrapper">
+          <h2 class="subtitle subtitle--catalog-other">Дополнительные товары</h2>
           <article class="catalog__product catalog__product--other">
             <h3 class="catalog__title catalog__title--other">Сахарозаменитель</h3>
             <dl class="catalog__description catalog__description--other">
               <dt class="catalog__term catalog__term--other">1 упаковка (100 г)</dt>
               <dd class="catalog__value catalog__value--other">200 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--other" href="#">Заказать</a>
           </article>
           <article class="catalog__product catalog__product--other">
             <h3 class="catalog__title catalog__title--other">Питьевая вода</h3>
@@ -154,7 +152,7 @@
               <dt class="catalog__term catalog__term--other">5 литров</dt>
               <dd class="catalog__value catalog__value--other">50 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--other" href="#">Заказать</a>
           </article>
           <article class="catalog__product catalog__product--other">
             <h3 class="catalog__title catalog__title--other">Молоко</h3>
@@ -162,7 +160,7 @@
               <dt class="catalog__term catalog__term--other">1 литр</dt>
               <dd class="catalog__value catalog__value--other">100 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--other" href="#">Заказать</a>
           </article>
           <article class="catalog__product catalog__product--other">
             <h3 class="catalog__title catalog__title--other">Витамины</h3>
@@ -170,7 +168,7 @@
               <dt class="catalog__term catalog__term--other">1 упаковка (30 г)</dt>
               <dd class="catalog__value catalog__value--other">300 Р.</dd>
             </dl>
-            <a class="button" href="#">Заказать</a>
+            <a class="button button--other" href="#">Заказать</a>
           </article>
           <article class="catalog__gift">
             <p class="catalog__gift-text">Закажите все и получите чехол для кота в подарок!</p>
@@ -180,8 +178,10 @@
     </main>
     <footer class="footer">
       <article class="partnership">
-        <h3 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="partnership__address">ул. Большая Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
+        <div class="partnership__wrapper">
+          <h3 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h3>
+          <p class="partnership__address">ул. Большая Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
+        </div>
       </article>
       <div class="footer__map"></div>
       <div class="footer__links">

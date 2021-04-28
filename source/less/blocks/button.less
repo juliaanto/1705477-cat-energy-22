@@ -31,5 +31,20 @@
   &--secondary {
     background-color: @light-grey;
     color: @dark-grey;
+    width: auto;
+  }
+
+  &--link {
+    width: auto;
+  }
+
+  &--other {
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: auto;
+    }
   }
 }
