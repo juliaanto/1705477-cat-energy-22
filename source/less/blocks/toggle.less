@@ -1,0 +1,23 @@
+.toggle {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-around;
+}
+
+.toggle__button {
+  width: 84px;
+  height: 14px;
+  border-style: none;
+  border-radius: 6px;
+  border-width: 5px;
+  border-color: @white;
+  background-color: @green;
+
+  &--before {
+    box-shadow: inset -30px 0 0 4px @white;
+  }
+
+  &--after {
+    box-shadow: inset 30px 0 0 4px @white;
+  }
+}

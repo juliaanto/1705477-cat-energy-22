@@ -67,18 +67,16 @@
 
 .example__photo {
   flex-grow: 1;
-  // width: 100%;
 
   @media (min-width: @desktop-width) {
-    // display: flex;
-    // align-items: flex-end;
-    // justify-content: center;
-    // width: 50%;
-    background-color: rgba(156, 233, 214, 0.5);
-    // height: 650px;
-    // position: absolute;
-    // right: 0;
     width: 50%;
     max-width: 650px;
   }
+}
+
+.example__photo-before,
+.example__photo-after {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
