@@ -13,26 +13,47 @@
 
 .example__wrapper {
   .wrapper(inner);
+  .wrapper();
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .example__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    gap: 42px;
+    justify-content: flex-start;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 50%;
-    max-width: 650px;
+    max-width: 430px;
   }
 }
 
 .example__description {
   .text();
+  width: 100%;
 }
 
 .example__value {
   text-transform: uppercase;
   font-size: 24px;
+  border: 1px solid @special-grey;
+  text-align: center;
+  min-width: 124px;
+  min-height: 64px;
+  padding: 15px 10px 10px;
+  box-sizing: border-box;
 }
 
 .example__term {
@@ -40,6 +61,21 @@
   font-size: 12px;
   text-transform: lowercase;
   color: @dark-grey;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: -20px;
+  width: min-content;
+  padding: 10px;
+  background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey;
+  }
 }
 
 .example__cost {
@@ -66,11 +102,20 @@
 }
 
 .example__photo {
-  flex-grow: 1;
+  min-width: 311px;
+  min-height: 286px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
 
   @media (min-width: @desktop-width) {
-    width: 50%;
-    max-width: 650px;
+    margin-right: -170px;
   }
 }
 
@@ -79,4 +124,22 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.example__photo-before {
+  @media (min-width: @tablet-width) {
+    object-fit: cover;
+    object-position: -50px;
+    width: 354px;
+    height: 620px;
+  }
+}
+
+.example__photo-after {
+  @media (min-width: @tablet-width) {
+    object-fit: cover;
+    object-position: 100%;
+    width: 354px;
+    height: 620px;
+  }
 }

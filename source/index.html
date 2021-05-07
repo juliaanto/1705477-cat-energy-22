@@ -85,8 +85,14 @@
             </div>
           </div>
           <div class="example__photo">
-            <img class="example__photo-before" src="img/example-before.png" width="311" height="232" alt="Фото Бориса до">
-            <img class="example__photo-after hidden" src="img/example-after.png" width="251" height="240" alt="Фото Бориса после">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/example-before-tablet.png" width="677" height="520">
+              <img class="example__photo-before" src="img/example-before.png" width="311" height="232" alt="Фото Бориса до">
+            </picture>
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/example-after-tablet.png" width="545" height="520">
+              <img class="example__photo-after hidden" src="img/example-after.png" width="251" height="240" alt="Фото Бориса после">
+            </picture>
             <div class="toggle">
               <p class="toggle__toggle-min">Было</p>
               <button class="toggle__button toggle__button--before" aria-label="Просмотр фото до/после"></button>
