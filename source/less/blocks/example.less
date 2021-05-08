@@ -107,12 +107,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
   }
-
 
   @media (min-width: @desktop-width) {
     margin-right: -170px;
@@ -130,7 +129,7 @@
   @media (min-width: @tablet-width) {
     object-fit: cover;
     object-position: -50px;
-    width: 354px;
+    max-width: 354px;
     height: 620px;
   }
 }
@@ -139,7 +138,7 @@
   @media (min-width: @tablet-width) {
     object-fit: cover;
     object-position: 100%;
-    width: 354px;
+    max-width: 354px;
     height: 620px;
   }
 }

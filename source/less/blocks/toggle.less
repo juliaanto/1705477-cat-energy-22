@@ -7,6 +7,8 @@
 
   @media (min-width: @tablet-width) {
     width: 500px;
+    height: 46px;
+    margin-bottom: 10px;
   }
 }
 
@@ -15,9 +17,9 @@
   height: 14px;
   border-style: none;
   border-radius: 6px;
-
   border: 1px solid @special-grey;
   background-color: @green;
+  cursor: pointer;
 
   &--before {
     box-shadow: inset -37px 0 0 3px @white, inset 0 0 0 3px @white;
@@ -25,5 +27,46 @@
 
   &--after {
     box-shadow: inset 37px 0 0 3px @white, inset 0 0 0 3px @white;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 13px solid @white;
+    border-radius: 50%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: @green;
+    background-color: @green;
+    box-shadow: 0 0 0 1px @special-grey, 0 2px 2px 0 @special-grey;
+    padding: 0;
+    margin-top: -18px;
+
+    &:hover {
+      box-shadow: 0 0 0 1px @special-grey, 0 4px 2px 0 @special-grey;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px @green, 0 4px 2px 0 @special-grey;
+    }
+  }
+}
+
+.toggle__slider {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 428px;
+  }
+}
+
+.toggle__bar {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    height: 6px;
+    background-color: @special-grey-2;
+    border-radius: 6px;
   }
 }
