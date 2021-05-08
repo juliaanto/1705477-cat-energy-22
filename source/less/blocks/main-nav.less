@@ -38,11 +38,32 @@
     &::after {
       display: none;
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--intro {
     @media (min-width: @desktop-width) {
       color: @white;
+    }
+  }
+
+  &--current {
+    @media (min-width: @tablet-width) {
+      border-bottom: @green solid 2px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &--intro&--current {
+    @media (min-width: @desktop-width) {
+      border-bottom: @white solid 2px;
     }
   }
 }
