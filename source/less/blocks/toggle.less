@@ -9,6 +9,25 @@
     width: 500px;
     height: 46px;
     margin-bottom: 10px;
+
+    &:hover p {
+      @media (min-width: @tablet-width) {
+        border-bottom-style: solid;
+      }
+    }
+
+    &:active p {
+      @media (min-width: @tablet-width) {
+        border-bottom-style: none;
+      }
+    }
+  }
+}
+
+.toggle__toggle-min,
+.toggle__toggle-max {
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px dotted rgba(@black, 0.24);
   }
 }
 
