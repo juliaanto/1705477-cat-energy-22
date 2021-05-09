@@ -1,15 +1,30 @@
+.footer {
+  position: relative;
+}
+
 .footer__links {
   background-color: @light-grey;
 }
 
 .footer__links-wrapper {
   .wrapper(inner);
+  .wrapper;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+  }
+}
+
+.footer__map {
+  background-color: @light-grey;
+}
+
+.footer__map iframe {
+  @media (min-width: @tablet-width) {
+    height: 400px;
   }
 }

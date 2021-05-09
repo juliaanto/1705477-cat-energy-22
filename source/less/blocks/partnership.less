@@ -4,6 +4,18 @@
   &--index {
     background-color: @white;
   }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-color: @white;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    height: 201px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .partnership__wrapper {
@@ -11,6 +23,13 @@
   .wrapper(inner);
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 76px;
+    padding-right: 89px;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .partnership__title {
@@ -18,9 +37,20 @@
   text-transform: uppercase;
   font-size: 16px;
   color: @light-black;
+  max-width: 176px;
 }
 
 .partnership__address {
   font-family: @arial;
   color: @dark-grey;
+  max-width: 173px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 150px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }

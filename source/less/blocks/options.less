@@ -154,8 +154,21 @@
 }
 
 .options__link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   color: @black;
   font-size: 16px;
+
+  &:hover svg,
+  &:active svg {
+    transform: scaleX(32/24);
+    margin-left: calc((32px - 24px) / 2);
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

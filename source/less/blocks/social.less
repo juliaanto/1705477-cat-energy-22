@@ -3,9 +3,36 @@
   .separator(bottom);
   padding: 20px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 
   @media (min-width: @tablet-width) {
     border: none;
     width: auto;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+  fill: @special-dark-grey;
+
+  &:hover {
+    fill: @green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.social__link--facebook {
+  fill: none;
+  stroke: @special-dark-grey;
+
+  &:hover {
+    fill: none;
+    stroke: @green;
   }
 }
