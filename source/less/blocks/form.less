@@ -166,6 +166,7 @@
 
   &--radio {
     margin-left: 42px;
+    cursor: pointer;
 
     &::before {
       display: block;
@@ -192,15 +193,18 @@
   background-position: 50% 50%;
 }
 
+.form__radio:disabled + .form__label--radio::before,
 .form__checkbox:disabled + .form__label--extra::before {
   cursor: not-allowed;
 }
 
+.form__radio:disabled + .form__label--radio,
 .form__checkbox:disabled + .form__label--extra {
   opacity: 0.3;
   cursor: not-allowed;
 }
 
+.form__radio:not(:disabled):hover + .form__label--radio::before,
 .form__checkbox:not(:disabled):hover + .form__label--extra::before {
   border-color: @special-grey-3;
 }
