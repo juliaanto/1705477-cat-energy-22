@@ -237,6 +237,26 @@
     border-radius: 0;
     padding: 12px 13px 14px;
   }
+
+  &--email {
+    background: url("/img/form-icon-email.svg") no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+
+    @media (min-width: @tablet-width) {
+      background-position-x: calc(100% - 20px);
+    }
+  }
+
+  &--tel {
+    background: url("/img/form-icon-tel.svg") no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+
+    @media (min-width: @tablet-width) {
+      background-position-x: calc(100% - 20px);
+    }
+  }
 }
 
 .form__note {
