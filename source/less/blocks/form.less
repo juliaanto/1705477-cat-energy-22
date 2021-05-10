@@ -226,6 +226,17 @@
     margin-left: 0;
     padding: 9px 12px;
   }
+
+  &:hover {
+    border-color: @special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid @dark-grey;
+    border-radius: 0;
+    padding: 12px 13px 14px;
+  }
 }
 
 .form__note {
@@ -233,5 +244,18 @@
 
   @media (min-width: @tablet-width) {
     width: 40%;
+  }
+}
+
+.form__error {
+  border: 2px solid @red;
+  padding: 12px 13px 14px;
+
+  &:hover {
+    border: 2px solid @red;
+  }
+
+  &:focus {
+    border: 2px solid @red;
   }
 }
