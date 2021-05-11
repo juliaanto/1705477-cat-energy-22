@@ -219,10 +219,11 @@
 .catalog__gift {
   display: flex;
   align-items: flex-end;
-  background: url("../img/photo-gift.jpg") no-repeat center;
+  background: url("../img/catalog-gift.svg") no-repeat top center, url("../img/photo-gift.jpg") no-repeat center;
+  background-size: 78px 80px, 100%;
+  background-position: center 58px, center;
   background-color: @green;
-  min-height: 289px;
-  background-size: 100%;
+  min-height: 244px;
   object-fit: contain;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -234,8 +235,10 @@
     grid-column-end: -1;
     margin-top: 70px;
     margin-bottom: 70px;
-    height: 200px;
+    height: 155px;
     min-height: 0;
+    background-position: 78px center, center 65%;
+    padding-left: 500px;
   }
 
   @media (min-width: @desktop-width) {
@@ -245,7 +248,11 @@
     position: absolute;
     bottom: 0;
     height: 289px;
+    width: 245px;
+    padding-left: 41px;
+    padding-right: 41px;
     box-sizing: border-box;
+    background-position: center 30px, center;
   }
 }
 
@@ -254,4 +261,12 @@
   font-family: @arial;
   font-size: 16px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
