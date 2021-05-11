@@ -5,6 +5,7 @@
   .wrapper();
   .wrapper(inner);
   margin-top: 66px;
+  .separator-section(0);
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -13,6 +14,10 @@
     margin-bottom: 15px;
     padding-left: 0;
     padding-right: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -23,10 +28,11 @@
   font-weight: 500;
   font-size: 20px;
   margin-left: -300px;
+  margin-right: -40px;
   text-align: center;
   padding-top: 22px;
   padding-bottom: 24px;
-  .separator-section(-50px);
+  .separator-section(25px);
 
   @media (min-width: @tablet-width) {
     border-top: none;

@@ -15,12 +15,12 @@
       <a class="logo">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop-image.svg" width="52" height="52">
-          <source media="(min-width: 660px)" srcset="img/logo-tablet-image.svg" width="52" height="52">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-image.svg" width="52" height="52">
           <img class="logo-image" src="img/logo-mobile-image.svg" width="34" height="38" alt="Логотип сайта">
         </picture>
         <img class="logo-text logo-text--header" src="img/logo-mobile-text.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -40,11 +40,11 @@
             <fieldset class="form__group form__group--parameters">
               <div class="form__row">
                 <label class="form__label" for="name">Имя:*</label>
-                <input class="form__text" id="name" type="text" name="name" placeholder="Барсик" required>
+                <input class="form__text form__text--name" id="name" type="text" name="name" placeholder="Барсик" required>
               </div>
               <div class="form__row">
                 <label class="form__label" for="weight">Вес (кг):*</label>
-                <input class="form__text" id="weight" type="text" name="weight" placeholder="7" required>
+                <input class="form__text form__text--weight" id="weight" type="text" name="weight" placeholder="7" required>
               </div>
               <div class="form__row">
                 <label class="form__label" for="age">Возраст (лет):</label>
@@ -53,11 +53,11 @@
             </fieldset>
             <fieldset class="form__group form__group--purpose">
                 <input class="form__radio visually-hidden" type="radio" id="slim" name="purpose" value="slim" checked>
-                <label class="form__label" for="slim">Похудение</label>
+                <label class="form__label form__label--radio" for="slim">Похудение</label>
                 <input class="form__radio visually-hidden" type="radio" id="pro" name="purpose" value="pro">
-                <label class="form__label" for="pro">Набор массы</label>
-                <input class="form__radio visually-hidden" type="radio" id="advice" name="purpose" value="advice">
-                <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                <label class="form__label form__label--radio" for="pro">Набор массы</label>
+                <input class="form__radio visually-hidden" type="radio" id="advice" name="purpose" value="advice" disabled>
+                <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
             </fieldset>
           </div>
           <fieldset class="form__group">
@@ -65,11 +65,17 @@
             <div class="form__contacts">
               <div class="form__row form__row--contacts">
                 <label class="form__label" for="email">E-mail:*</label>
-                <input class="form__text form__text--email" id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
+                <input class="form__text form__text--email form__text--icon" id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
+                <svg class="form__icon form__icon--email" width="24" height="12">
+                  <use xlink:href="img/sprite.svg#form-icon-email"></use>
+                </svg>
               </div>
               <div class="form__row form__row--contacts">
                 <label class="form__label" for="tel">Телефон:*</label>
-                <input class="form__text form__text--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                <input class="form__text form__text--tel form__text--icon" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                <svg class="form__icon form__icon--tel" width="24" height="12">
+                  <use xlink:href="img/sprite.svg#form-icon-tel"></use>
+                </svg>
               </div>
             </div>
           </fieldset>
@@ -84,11 +90,11 @@
             <div class="form__wrapper-extra">
               <input class="form__checkbox visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
               <label class="form__label form__label--extra" for="sweetener">Сахарозаменитель</label>
-              <input class="form__checkbox visually-hidden" type="checkbox" id="water" name="water">
+              <input class="form__checkbox visually-hidden" type="checkbox" id="water" name="water" disabled>
               <label class="form__label form__label--extra" for="water">Питьевая вода</label>
               <input class="form__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
               <label class="form__label form__label--extra" for="milk">Молоко</label>
-              <input class="form__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+              <input class="form__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins" checked disabled>
               <label class="form__label form__label--extra" for="vitamins">Витамины</label>
             </div>
           </fieldset>
@@ -143,5 +149,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/main-nav.js"></script>
+    <script src="js/form-validation.js"></script>
   </body>
 </html>
