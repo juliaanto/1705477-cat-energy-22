@@ -297,13 +297,16 @@
 
   &:focus {
     border: 2px solid @red;
+    padding: 12px 13px 14px;
   }
 }
 
-.form__error + .form__icon--email {
+.form__error + .form__icon--email,
+.form__error:focus + .form__icon--email {
   stroke: @red;
 }
 
-.form__error + .form__icon--tel {
+.form__error + .form__icon--tel,
+.form__error:focus + .form__icon--tel {
   fill: @red;
 }
