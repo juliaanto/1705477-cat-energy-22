@@ -9,18 +9,6 @@
     width: 500px;
     height: 46px;
     margin-bottom: 10px;
-
-    &:hover p {
-      @media (min-width: @tablet-width) {
-        border-bottom-style: solid;
-      }
-    }
-
-    &:active p {
-      @media (min-width: @tablet-width) {
-        border-bottom-style: none;
-      }
-    }
   }
 
   @media (min-width: @desktop-width) {
@@ -32,6 +20,18 @@
 .toggle__toggle-max {
   @media (min-width: @tablet-width) {
     border-bottom: 1px dotted rgba(@black, 0.24);
+
+    &:hover {
+      @media (min-width: @tablet-width) {
+        border-bottom-style: solid;
+      }
+    }
+
+    &:active {
+      @media (min-width: @tablet-width) {
+        border-bottom-style: none;
+      }
+    }
   }
 }
 
