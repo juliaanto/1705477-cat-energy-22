@@ -190,7 +190,7 @@
 }
 
 .form__checkbox:checked + .form__label--extra::before {
-  background: url("/img/check.svg") no-repeat;
+  background: url("../img/check.svg") no-repeat;
   background-position: 50% 50%;
 }
 
@@ -208,6 +208,11 @@
 .form__radio:not(:disabled):hover + .form__label--radio::before,
 .form__checkbox:not(:disabled):hover + .form__label--extra::before {
   border-color: @special-grey-3;
+}
+
+.form__radio:not(:disabled):focus + .form__label--radio::before,
+.form__checkbox:not(:disabled):focus + .form__label--extra::before {
+  box-shadow: inset 0 0 0 7px @white, 0 0 0 2px @dark-grey;
 }
 
 .form__textarea-wrapper {
