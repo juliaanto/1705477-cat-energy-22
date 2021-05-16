@@ -75,11 +75,19 @@
   &--current {
     @media (min-width: @tablet-width) {
       border-bottom: @green solid 2px;
-      padding-bottom: 8px;
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 9px;
     }
   }
 
   &--intro&--current {
+    @media (min-width: @tablet-width) {
+      padding-bottom: 8px;
+    }
+
     @media (min-width: @desktop-width) {
       border-bottom: @white solid 2px;
     }
