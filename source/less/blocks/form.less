@@ -190,7 +190,7 @@
 }
 
 .form__checkbox:checked + .form__label--extra::before {
-  background: url("/img/check.svg") no-repeat;
+  background: url("../img/check.svg") no-repeat;
   background-position: 50% 50%;
 }
 
@@ -208,6 +208,11 @@
 .form__radio:not(:disabled):hover + .form__label--radio::before,
 .form__checkbox:not(:disabled):hover + .form__label--extra::before {
   border-color: @special-grey-3;
+}
+
+.form__radio:not(:disabled):focus + .form__label--radio::before,
+.form__checkbox:not(:disabled):focus + .form__label--extra::before {
+  box-shadow: inset 0 0 0 7px @white, 0 0 0 2px @dark-grey;
 }
 
 .form__textarea-wrapper {
@@ -236,7 +241,7 @@
     outline: none;
     border: 2px solid @dark-grey;
     border-radius: 0;
-    padding: 12px 13px 14px;
+    padding: 12px 13px 14px 13px;
   }
 
   &--icon {
@@ -246,7 +251,7 @@
 }
 
 .form__text--textarea:focus {
-  padding: 8px 12px;
+  padding: 8px 11px;
 }
 
 .form__icon {
@@ -282,9 +287,9 @@
   }
 }
 
-.form__error {
+.form__error:invalid {
   border: 2px solid @red;
-  padding: 12px 13px 14px;
+  padding: 12px 12px 14px 12px;
 
   &:hover {
     border: 2px solid @red;
@@ -292,13 +297,16 @@
 
   &:focus {
     border: 2px solid @red;
+    padding: 12px 12px 14px 12px;
   }
 }
 
-.form__error + .form__icon--email {
+.form__error + .form__icon--email,
+.form__error:focus + .form__icon--email {
   stroke: @red;
 }
 
-.form__error + .form__icon--tel {
+.form__error + .form__icon--tel,
+.form__error:focus + .form__icon--tel {
   fill: @red;
 }

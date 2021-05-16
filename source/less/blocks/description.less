@@ -1,9 +1,16 @@
 .description__wrapper {
   .wrapper();
   .wrapper(inner);
+  padding-top: 4px;
+  padding-bottom: 26px;
 
   @media (min-width: @tablet-width) {
-    // padding-right: 109px;
+    padding-top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
+    padding-bottom: 6px;
   }
 }
 
@@ -13,9 +20,18 @@
   flex-direction: column;
   list-style: none;
   padding-left: 0;
+  margin-top: 22px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 51px;
+    row-gap: 18px;
+    column-gap: 125px;
+  }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 70px;
     justify-content: space-between;
   }
 }
@@ -26,7 +42,20 @@
   padding-left: 80px;
   margin-top: 20px;
   position: relative;
+  background-position: 16px 15px;
   .text();
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: @green;
+    z-index: -1;
+  }
 
   &--healthy {
     background-image: url("../img/description-healthy.svg");
@@ -49,15 +78,23 @@
     min-height: 280px;
     box-sizing: border-box;
     padding-left: 0;
-    padding-top: 100px;
-    padding-right: 20px;
+    padding-top: 113px;
+    padding-right: 5px;
+    background-position: 25px 27px;
+    line-height: 1.5;
+    margin-right: 11px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
 
     &::after {
       font-size: 280px;
       line-height: 200px;
       position: absolute;
       top: 0;
-      left: 100px;
+      left: 120px;
       font-family: "Oswald", "Arial", sans-serif;
       color: @light-grey;
       z-index: -1;
@@ -69,14 +106,17 @@
 
     &--easy::after {
       content: "2";
+      left: 112px;
     }
 
     &--start::after {
       content: "3";
+      left: 111px;
     }
 
     &--enjoy::after {
       content: "4";
+      left: 110px;
     }
   }
 
