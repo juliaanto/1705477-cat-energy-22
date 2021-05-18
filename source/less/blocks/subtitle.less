@@ -7,12 +7,14 @@
   padding-right: 20px;
   max-width: 181px;
   margin-left: -20px;
+  line-height: 1.083;
 
   @media (min-width: @tablet-width) {
     max-width: max-content;
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -40px;
+    font-size: 36px;
   }
 
   &--catalog-other {
@@ -35,7 +37,7 @@
     width: 100vw;
     height: 2px;
     background-color: @green;
-    margin-top: 17px;
+    margin-top: 15px;
     z-index: -1;
     margin-left: calc(-1 * (((100vw - (280px + 2 * 20px)) / 2)));
 
@@ -53,6 +55,10 @@
 
     @media (min-width: 1520px) {
       margin-left: calc(-1 * (((100vw - (1300px + 2 * 110px)) / 2) + 70px));
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-top: 23px;
     }
   }
 }
