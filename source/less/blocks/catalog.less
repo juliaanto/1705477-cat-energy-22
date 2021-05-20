@@ -1,5 +1,4 @@
 .catalog {
-
   @media (min-width: @tablet-width) {
     border-top: none;
   }
@@ -59,7 +58,11 @@
     }
 
     &::after {
-      margin-left: calc((350px - 100vw)/2);
+      margin-left: -20px;
+
+      @media (min-width: 390px) {
+        margin-left: calc(((350px - 100vw) / 2));
+      }
     }
   }
 
