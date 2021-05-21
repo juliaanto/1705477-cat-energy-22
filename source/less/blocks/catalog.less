@@ -309,24 +309,24 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/catalog-gift.svg") no-repeat 10px center, url("../img/photo-gift-mobile@2x.jpg") no-repeat center;
+    background: url("../img/catalog-gift.svg") no-repeat center 58px, url("../img/photo-gift-mobile@2x.jpg") no-repeat center center;
     background-size: 78px 80px, 280px 289px;
+    background-color: @green;
   }
 
   @media (min-width: @tablet-width) {
-    background: url("../img/catalog-gift.svg") no-repeat top center, url("../img/photo-gift-tablet.jpg") no-repeat center;
+    background: url("../img/catalog-gift.svg") no-repeat 78px center, url("../img/photo-gift-tablet.jpg") no-repeat center 65%;
     grid-column-start: 1;
     grid-column-end: -1;
     margin-top: 28px;
     margin-bottom: 70px;
     min-height: 200px;
     padding-bottom: 0;
-    background-position: 78px center, center 65%;
     padding-left: 424px;
     padding-right: 107px;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/catalog-gift.svg") no-repeat top center, url("../img/photo-gift-tablet@2x.jpg") no-repeat center;
+      background: url("../img/catalog-gift.svg") no-repeat 78px center, url("../img/photo-gift-tablet@2x.jpg") no-repeat center 65%;
       background-size: 78px 80px, 708px auto;
     }
   }
