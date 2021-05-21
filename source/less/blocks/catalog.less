@@ -1,6 +1,4 @@
 .catalog {
-  .separator(top);
-
   @media (min-width: @tablet-width) {
     border-top: none;
   }
@@ -57,6 +55,14 @@
       outline: @light-grey solid 2px;
       outline-offset: -2px;
       padding: 159px 38px 38px;
+    }
+
+    &::after {
+      margin-left: -20px;
+
+      @media (min-width: 390px) {
+        margin-left: calc(((350px - 100vw) / 2));
+      }
     }
   }
 
