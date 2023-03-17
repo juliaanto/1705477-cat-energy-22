@@ -1,0 +1,1 @@
+var button=document.querySelector(".form__button"),input=document.querySelectorAll(".form__text");button.addEventListener("click",(function(){for(var t=0;t<input.length;t++)input[t].classList.add("form__error")}));
