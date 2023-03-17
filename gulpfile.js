@@ -14,6 +14,7 @@ const svgstore = require("gulp-svgstore");
 const webp = require("gulp-webp");
 const del = require("del");
 const sync = require("browser-sync").create();
+const ghpages = require('gh-pages');
 
 // Styles
 
@@ -193,3 +194,7 @@ exports.default = gulp.series(
     server,
     watcher
   ));
+
+gulp.task('deploy', function() {
+  return ghpages.publish('build');
+});
