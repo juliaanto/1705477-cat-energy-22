@@ -23,11 +23,12 @@ Cat energy is an educational project implemented while studying at a professiona
 
 
 ## How to run
+To clone and run this application:
 
 ```
 git clone https://github.com/juliaanto/1705477-cat-energy-22.git
 cd 1705477-cat-energy-22/
 npm install
 npm start
-
 ```
+The application will be available at [localhost:3000](http://localhost:3000).
