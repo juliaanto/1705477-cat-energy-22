@@ -23,4 +23,11 @@ Cat energy is an educational project implemented while studying at a professiona
 
 
 ## How to run
-Clone or download the repository and run `npm install` to install all dependencies. Once the dependencies are installed, you can run `npm start` to start the application. You will then be able to access it at [localhost:3000](http://localhost:3000).
+
+```
+git clone https://github.com/juliaanto/1705477-cat-energy-22.git
+cd 1705477-cat-energy-22/
+npm install
+npm start
+
+```
